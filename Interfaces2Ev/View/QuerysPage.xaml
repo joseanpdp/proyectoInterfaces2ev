@@ -1,0 +1,48 @@
+﻿<Page x:Class="Interfaces2Ev.View.QuerysPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Interfaces2Ev.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="500"
+      Title="QuerysPage">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/RD/ViewRD.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid Style="{DynamicResource Grid}" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+        <TextBlock Style="{DynamicResource TextBlock}" Text="Product Name:" Margin="107,87,260,336" FontSize="20"/>
+        <TextBox x:Name="productName" Style="{DynamicResource TextBox}" Margin="249,87,0,0" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Width="126" FontSize="20"/>
+
+        <TextBlock Style="{DynamicResource TextBlock}" Text="Category:" Margin="153,128,260,291" FontSize="16"/>
+        <ComboBox x:Name="categories" Style="{DynamicResource Combobox}" Margin="247,131,0,0" FontSize="16" HorizontalAlignment="Left" Width="170" Height="28" VerticalAlignment="Top">
+            <ComboBoxItem Style="{DynamicResource ComboBoxItem}" Content="Beverages"/>
+            <ComboBoxItem Style="{DynamicResource ComboBoxItem}" Content="Condiments"/>
+            <ComboBoxItem Style="{DynamicResource ComboBoxItem}" Content="Confections"/>
+            <ComboBoxItem Style="{DynamicResource ComboBoxItem}" Content="Dairy Products"/>
+            <ComboBoxItem Style="{DynamicResource ComboBoxItem}" Content="Grains/Cereals"/>
+            <ComboBoxItem Style="{DynamicResource ComboBoxItem}" Content="Meat/Poultry"/>
+            <ComboBoxItem Style="{DynamicResource ComboBoxItem}" Content="Produce"/>
+            <ComboBoxItem Style="{DynamicResource ComboBoxItem}" Content="Seafood"/>
+        </ComboBox>
+
+        <TextBlock Style="{DynamicResource TextBlock}" Text="Quantity per unit:" Margin="83,165,260,255" FontSize="20" Width="auto" Height="auto"/>
+        <TextBox x:Name="quantityPerUnit" Style="{DynamicResource TextBox}" Margin="247,165,0,0" Width="128" FontSize="20" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top"/>
+
+        <TextBlock Style="{DynamicResource TextBlock}" Text="Price:" Margin="191,210,258,213" FontSize="20"/>
+        <TextBox x:Name="price" Style="{DynamicResource TextBox}" Margin="249,210,0,0" FontSize="20" HorizontalAlignment="Left" Width="126" Height="24" VerticalAlignment="Top"/>
+
+        <TextBlock Style="{DynamicResource TextBlock}" Text="Stock:" Margin="187,248,0,175" FontSize="20" HorizontalAlignment="Left" Width="52"/>
+        <TextBox x:Name="stock" Style="{DynamicResource TextBox}" Margin="249,248,0,0" FontSize="20" HorizontalAlignment="Left" Width="126" Height="24" VerticalAlignment="Top"/>
+
+        <Button Style="{DynamicResource Button}" Content="Create" Margin="0,315,0,0" Click="createProduct" FontSize="20" HorizontalAlignment="Center" Width="100" Height="35" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

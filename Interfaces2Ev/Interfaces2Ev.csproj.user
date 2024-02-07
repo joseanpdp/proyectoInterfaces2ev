@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\ByCategoriesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ExpensivePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\QuerysPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ReadPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\NavigationView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SoldPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\StockPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="RD\ViewRD.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ByCategoriesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ExpensivePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\QuerysPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ReadPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RD\LoginRD.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\NavigationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SoldPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\StockPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

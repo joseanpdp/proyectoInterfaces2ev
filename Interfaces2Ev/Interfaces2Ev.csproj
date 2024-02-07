@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\bbdd_icon.png" />
+    <None Remove="Images\exit_icon.png" />
+    <None Remove="Images\expensive_icon.png" />
+    <None Remove="Images\forest_background.jpeg" />
+    <None Remove="Images\forest_background.jpg" />
+    <None Remove="Images\query_icon.jpg" />
+    <None Remove="Images\query_icon2.png" />
+    <None Remove="Images\read_icon.png" />
+    <None Remove="Images\sold_icon.png" />
+    <None Remove="Images\stock_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <PackageReference Include="MySqlConnector" Version="2.3.5" />
+    <PackageReference Include="ToastNotifications" Version="2.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\bbdd_icon.png" />
+    <Resource Include="Images\exit_icon.png" />
+    <Resource Include="Images\expensive_icon.png" />
+    <Resource Include="Images\forest_background.jpeg" />
+    <Resource Include="Images\query_icon.jpg" />
+    <Resource Include="Images\query_icon2.png" />
+    <Resource Include="Images\read_icon.png" />
+    <Resource Include="Images\sold_icon.png" />
+    <Resource Include="Images\stock_icon.png" />
+  </ItemGroup>
+
+</Project>

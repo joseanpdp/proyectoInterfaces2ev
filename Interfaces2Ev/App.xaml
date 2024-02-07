@@ -1,0 +1,9 @@
+﻿<Application x:Class="Interfaces2Ev.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Interfaces2Ev"
+             StartupUri="/View/LoginWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

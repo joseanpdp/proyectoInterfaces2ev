@@ -1,0 +1,74 @@
+﻿<Window x:Class="Interfaces2Ev.View.NavigationView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Interfaces2Ev.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="NavigationView">
+    
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/RD/ViewRD.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid Style="{DynamicResource Grid}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ListBox Style="{DynamicResource ListBox}" x:Name="navigationListBox" Grid.Column="0" SelectionChanged="OnNavigationItemSelected">
+                <ListBoxItem x:Name="CRUD" Style="{DynamicResource ListBoxItem}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/query_icon.jpg" Width="30" Height="30"/>
+                        <TextBlock Text="Create products" Padding="10"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="Product_Table" Style="{DynamicResource ListBoxItem}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/read_icon.png" Width="30" Height="30"/>
+                        <TextBlock Text="Product Table" Padding="10"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="By_Categories" Style="{DynamicResource ListBoxItem}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/query_icon2.png" Width="30" Height="30"/>
+                        <TextBlock Text="By Categories" Padding="10"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="Sold_products" Style="{DynamicResource ListBoxItem}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/sold_icon.png" Width="30" Height="30"/>
+                        <TextBlock Text="Sold products" Padding="10"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="Expensive_products" Style="{DynamicResource ListBoxItem}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/expensive_icon.png" Width="30" Height="30"/>
+                        <TextBlock Text="Expensive products" Padding="10"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="Without_stock" Style="{DynamicResource ListBoxItem}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/stock_icon.png" Width="30" Height="30"/>
+                        <TextBlock Text="Without stock" Padding="10"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem x:Name="Exit" Style="{DynamicResource ListBoxItem}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/exit_icon.png" Width="30" Height="30"/>
+                        <TextBlock Text="Exit" Padding="10"/>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+
+            <Frame x:Name="mainFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+        </Grid>
+    </Grid>
+</Window>
